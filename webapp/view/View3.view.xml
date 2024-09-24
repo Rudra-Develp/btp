@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m" xmlns:core="sap.ui.core" 
+controllerName="project1.controller.View3" 
+displayBlock="true">
+
+	<Breadcrumbs id="_IDGenBreadcrumbs1" separatorStyle="{/separatorStyle}">
+			<Link id="_IDGenLink" text="Home" press=".onPress"/>
+			<Link id="_IDGenLink1" text="Page 1" press=".onPress" />
+			<Link id="_IDGenLink2" text="Page 2" press=".onPress" />
+			<Link id="_IDGenLink3" text="Page 3" press=".onPress" />
+			<Link id="_IDGenLink4" text="Page 4" press=".onPress" />
+			<Link id="_IDGenLink5" text="Page 5" press=".onPress" />
+		</Breadcrumbs>
+        <HBox id="_IDGenHBox3" alignItems="Center">
+			<Label id="_IDGenLabel1" labelFor="separatorSelect" text="Change separator style" />
+			<Select class="sapUiSmallMarginBegin"
+					id="separatorSelect"
+					selectedKey="{/separatorStyle}"
+					change="onChange"
+					items="{ path: '/items' }">
+				<core:Item id="_IDGenItem" key="{text}" text="{key}" />
+			</Select>
+		</HBox>
+		<MessageStrip 
+		id="_IDGenMessageStrip"
+				text="Warnings"
+				enableFormattedText="true"
+				showIcon="true"
+				customIcon="sap-icon://alert"			
+				class="sapUiMediumMarginBottom">
+			</MessageStrip>
+			<VBox id="vbox_1" height="20px" width="5px" class="verticalbox">
+			
+			</VBox>
+
+			<CustomListItem type="Navigation" id="item">
+			<content>
+				<Text text="Sample Custom Content" id="text"/>
+				<Button id="_IDGenButtn0" 
+				class="sapUiSmallMargin" 
+				text="button" 
+				press=".onClick"          		
+				type="Emphasized"/>			
+			</content>			
+		</CustomListItem>
+
+</mvc:View>

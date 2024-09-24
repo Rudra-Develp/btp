@@ -1,0 +1,107 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m" xmlns:core="sap.ui.core" 
+controllerName="project1.controller.View1" 
+displayBlock="true">
+
+    <Page id="page1" title="{i18n>title}">
+
+    	<content>
+
+			<List id="_IDGenList1" headerText="Input">
+				<InputListItem id="_IDGenInputListItem1" label="WLAN">
+				<Button id="_IDGenButton1" 
+				text="but1"
+				type="Emphasized" 
+				press=".onOpenDialog" 
+				class="sapUiSmallMarginEnd"/>
+
+				<Button id="_IDGenButton2" 
+				text="but2" 
+				type="Emphasized" 
+				press=".onShowHello"/>
+				</InputListItem>
+
+				<InputListItem id="_IDGenInputListItem2" label="Price (EUR)">
+				<Input id="_IDGenInput1" 
+				placeholder="Price" 
+				value="799" 
+				type="Number"/>
+
+				</InputListItem>
+
+				<InputListItem id="_IDGenInputListItem3" label="Battery Saving">
+				<RadioButton id="_IDGenRadioButton1" groupName="GroupInputListItem"/>
+				</InputListItem>
+
+				<InputListItem id="_IDGenInputListItem4" label="Country">
+					<Select id="_IDGenSelect1">
+						<core:Item id="_IDGenItem1" key="GR" text="Greece"/>
+						<core:Item id="_IDGenItem2" key="MX" text="Mexico"/>
+						<core:Item id="_IDGenItem3" key="NO" text="Norway"/>
+						<core:Item id="_IDGenItem4" key="NZ" text="New Zealand"/>
+						<core:Item id="_IDGenItem5" key="NL" text="Netherlands"/>
+					</Select>
+				</InputListItem>
+
+				<InputListItem id="_IDGenInputListItem5" label="Price (EUR)">
+					<Input id="_IDGenInput2" placeholder="Price" value="799" type="Number"/>
+				</InputListItem>
+		
+				<InputListItem id="_IDGenInputListItem6" label="Address">
+					<Input id="_IDGenInput3" placeholder="Address" value="Main Rd, Manchester"/>
+				</InputListItem>
+		
+				<InputListItem id="_IDGenInputListItem7" label="Country">
+					<Select id="_IDGenSelect2">
+						<core:Item id="_IDGenItem6" key="GR" text="Greece"/>
+						<core:Item id="_IDGenItem7" key="MX" text="Mexico"/>
+						<core:Item id="_IDGenItem8" key="NO" text="Norway"/>
+						<core:Item id="_IDGenItem9" key="NZ" text="New Zealand"/>
+						<core:Item id="_IDGenItem10" key="NL" text="Netherlands"/>
+					</Select>
+				</InputListItem>
+
+				<InputListItem id="_IDGenInputListItem8" label="Volume">
+					<Slider id="_IDGenSlider1" min="0" max="10" value="7" width="200px"/>
+				</InputListItem>
+			
+			</List>
+			
+			<CustomListItem type="Navigation" id="item0">
+				<content>
+					<Text text="Sample Custom Content" id="text2"/>
+					<Button id="_IDGenButton3" 
+							class="sapUiSmallMargin" 
+							text="but3" 
+							press="onPress"          		
+							type="Emphasized"/>			
+				</content>			
+			</CustomListItem>
+		
+			<CustomListItem type="Navigation" id="item1">
+				<content>
+					<Text text="Sample Custom Content" id="text3"/>
+					<Button id="_IDGenButton0" 
+					class="sapUiSmallMargin" 
+					text="but4"
+					press=".onClick"          		
+					type="Emphasized"/>			
+				</content>			
+			</CustomListItem>
+			
+			<GenericTile id="_IDGenGenericT" class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					press=".onOpenDialog">
+					<TileContent id="_IDGenTileCt3">		
+						<HBox id="_IDGen2">
+							<core:Icon id="_IDGcon" src='sap-icon://user-edit'/>
+							<Label id="labl1" text="Download or Re-send"/>
+						</HBox>						
+					</TileContent>
+			</GenericTile>
+
+   		</content>
+
+			
+
+    </Page>
+</mvc:View>

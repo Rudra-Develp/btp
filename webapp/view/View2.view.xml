@@ -1,0 +1,169 @@
+<mvc:View
+	controllerName="project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core">
+
+    <Page id="page" title="NewView">
+        <content>
+            <Text id="text1" text="Button Clicked : "></Text>
+           
+            <Text id="_IDGenText1" text="{device>/FirstName}" />
+        </content>
+
+		<VBox id="_IDGenVBox1" class="sapUiMediumMargin">
+			<FormattedText id="_IDGenFormattedText1" htmlText="{device>/HTML}"/>
+			<!-- <Button id="carouselbtn" text="caros" press=".onNumberOfPages"></Button> -->
+		</VBox>
+
+		<Carousel id="myCarousel" height="300px" showPageIndicator="true" loop="true">
+			<pages>
+				<Image id="_IDGenImage1" src="http://images6.fanpop.com/image/photos/36800000/Beautiful-Landscapes-image-beautiful-landscapes-36803145-1920-1080.jpg"/>
+        		<Image id="_IDGenImage2" src="http://www.sap.com/global/ui/images/global/sap-logo.png"/>
+        	    <Image id="_IDGenImage3" src="http://www.fubiz.net/wp-content/uploads/2014/01/The-Infrared-Landscapes-3.jpg"/>
+				<Image id="_IDGenImage4" src="http://images6.fanpop.com/image/photos/36800000/Beautiful-Landscapes-image-beautiful-landscapes-36803145-1920-1080.jpg"/>
+        		<Image id="_IDGenImage5" src="http://www.sap.com/global/ui/images/global/sap-logo.png"/>
+        	    <Image id="_IDGenImage6" src="http://www.fubiz.net/wp-content/uploads/2014/01/The-Infrared-Landscapes-3.jpg"/>
+			</pages>
+		</Carousel>
+
+		<GenericTile id="_IDGenGenericTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom tileLayout" headerImage="sap-icon://bus-public-transport" header="Invoices" 
+		subheader="Department" press="press" >
+			<TileContent id="_IDGenTileContent">
+				<ImageContent id="_IDGenImageContent" src="http://www.fubiz.net/wp-content/uploads/2014/01/The-Infrared-Landscapes-3.jpg" />
+			</TileContent>
+		</GenericTile>
+
+		<GenericTile id="_IDGenGenericTile8" class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom defltpadng"  press="press" frameType="Auto" header="Invoices" subheader="details" headerImage="sap-icon://alert" sizeBehavior="Small">		
+		</GenericTile>
+
+
+ 
+		<SlideTile id="_IDGenSlideTile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+					<GenericTile id="_IDGenGenericTile"
+						backgroundImage="http://images6.fanpop.com/image/photos/36800000/Beautiful-Landscapes-image-beautiful-landscapes-36803145-1920-1080.jpg"
+						frameType="TwoByOne" press="pressOnTileOne">
+						<TileContent id="_IDGenTileContent1" footer="August 21, 2016">
+							<NewsContent id="_IDGenNewsContent"
+								contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+								subheader="Today, SAP News" />
+						</TileContent>
+					</GenericTile>
+
+					<GenericTile id="_IDGenGenericTile2"
+						backgroundImage="http://www.fubiz.net/wp-content/uploads/2014/01/The-Infrared-Landscapes-3.jpg"
+						frameType="TwoByOne" press="pressOnTileTwo">
+						<TileContent id="_IDGenTileContent2" footer="August 21, 2016">
+							<NewsContent id="_IDGenNewsContent1"
+								contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+								subheader="Today, SAP News" />
+						</TileContent>
+					</GenericTile>
+		</SlideTile>
+
+		<GenericTile id="_IDGenGenericTile4" class="sapUiTinyMarginBegin sapUiTinyMarginTop sapUiNoContentPadding "
+		mode="LineMode"	press=".onpress" >
+
+			<TileContent id="_IDGenTileContent3">
+			
+			<HBox id="_IDGenVBox2"  >
+			<core:Icon id="_IDGenIcon" src='sap-icon://user-edit' />
+			<Label id="label1" text="Download or Re-send"/>
+
+			</HBox>						
+			</TileContent>
+		</GenericTile>
+		
+	
+		<TileContent id="_IDGenTileContent5" footer="August 21, 2013" class="sapUiSmallMargin">
+				<!-- <NewsContent id="_IDGenNewsContent2" contentText="Invoice"/> -->
+				<VBox id="_IDGeVBox4" class="sapUiMediumMargin">
+				<HBox id="_IDenHBox" >
+				<core:Icon id="_IGenIcon2" src='sap-icon://user-edit' />
+				<Label id="laeltxt5" text="Invoice"></Label></HBox>
+				</VBox>
+		</TileContent>
+
+		<f:Card id="_IDGenCard1" class="sapUiMediumMargin" width="12%">		
+			<f:content>
+				<VBox id="_IDGenVBox4" class="sapUiMediumMargin">
+					<HBox id="_IDGenHBox" >
+					<core:Icon id="_IDGenIcon2" src='sap-icon://user-edit' />
+					<Label id="labeltxt5" text="Invoices"></Label></HBox>
+				</VBox>
+			</f:content>
+			
+		</f:Card>
+
+
+
+		<GenericTile id="_IDGenGenericTile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop " header="Invoices"
+				mode="ContentMode" press="press" headerImage="sap-icon://pdf-attachment"  sizeBehavior="Responsive" >
+				<TileContent id="_IDGenTileContent4"  frameType="Auto">
+					<Label id="_IDGenLabel" text="Download or Re-send"></Label>
+				</TileContent>
+		</GenericTile>
+	
+	
+	
+	
+	
+		<HBox id="_IDGenHBox1" >
+			<f:Card id="_IDGenCard" class="sapUiMediumMargin" width="150px">
+				
+				<f:content>
+					<VBox id="_IDGenBox4" class="sapUiMediumMargin">
+						<HBox id="_IDGnHBox" >
+						<core:Icon id="_IenIcon2" src='sap-icon://user-edit' />
+						<Label id="labeltt5" text="Invoices" ></Label></HBox>
+						<Text id="_IDGenText" text="Download or Re-send"
+						class="sapUiSmallMarginBottom "/>
+					</VBox>
+						
+				</f:content>
+			</f:Card>
+		
+		</HBox>
+		<!-- <VBox id="_IDGenVBox4" width="100px">
+		<Panel id="_IDGenPanel" headerText="Upper left">
+			<FlexBox id="_IDGenFlexBox"
+				height="100px"
+				alignItems="Start"
+				justifyContent="Start">
+				<Button id="_IDGenButton4" text="1" type="Emphasized" class="sapUiSmallMarginEnd" />
+				<Button id="_IDGenButton5" text="2" type="Reject" class="sapUiSmallMarginEnd" />
+				<Button id="_IDGenButton6" text="3" type="Accept" />
+			</FlexBox>
+		</Panel>
+		</VBox> -->
+
+
+    </Page>
+</mvc:View>
+
+
+
+
+
+<!-- 
+<f:ShellBar id="_IDGenShellBar1"
+			title="Application Title"
+			secondTitle="Short description"
+			homeIcon="./resources/sap/ui/documentation/sdk/images/logo_sap.png"
+			showCopilot="true"
+			showSearch="true"
+			showNotifications="true"
+			notificationsNumber="2">
+		<f:menu>
+			<m:Menu id="_IDGenMenu1">
+				<m:MenuItem id="_IDGenMenuItem1" text="Flight booking" icon="sap-icon://flight" />
+				<m:MenuItem id="_IDGenMenuItem2" text="Car rental" icon="sap-icon://car-rental" />
+			</m:Menu>
+		</f:menu>
+		<f:profile>
+			<m:Avatar id="_IDGenAvatar1" initials="UI"/>
+		</f:profile>
+	</f:ShellBar> -->

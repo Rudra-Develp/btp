@@ -1,0 +1,16 @@
+/* Enter your custom styles here */
+
+.verticalbox{
+
+    background-color: rgb(42, 165, 118);
+
+}
+.defltpadng{
+    padding: 0%;
+    background-color: aqua;
+}
+
+.margndef{
+
+    margin-top: -8px;
+}
